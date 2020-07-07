@@ -1,0 +1,48 @@
+$clr-bg: #323B4E;
+$clr-seco: #587fd3;
+$clr-seco-lt: #aac5ff;
+$clr-seco-hl: white;
+
+
+// $clr-main: #887456;
+// $clr-main-lt: #a38b68;
+
+$clr-main: #a38b68;
+$clr-main-lt: #c2a57a;
+$clr-main-hl: #dfbe8d;
+$clr-main-dk: #534735;
+
+
+.activity-statement {
+    width: 100%;
+    padding: 2px 3px;
+    margin-bottom: 5px;
+    //border-bottom: 1px solid grey;
+
+    &.Knight { border-left: 4px solid #0000dd; }
+    &.Paladin { border-left: 4px solid #dddd00; }
+    &.Sorcerer { border-left: 4px solid #aa0000; }
+    &.Druid { border-left: 4px solid #087908; }
+
+
+    &.old span { color: #5f5f5f; }
+    &.fresh span { font-weight: bold; }
+    .link {
+        color: white;
+        cursor: pointer;
+        padding: 3px 5px;
+
+        &.Knight { color: #0000dd; }
+        &.Paladin { color: #dddd00; }
+        &.Sorcerer { color: #aa0000; }
+        &.Druid { color: #087908; }
+        &:hover, &:focus {
+            background: $clr-main-hl;
+        }
+    }
+}
+
+.filter-button.toggled { opacity: 0.6; background: none;}
+
+.prof-hidden, .rec-hidden { display: none; }
+

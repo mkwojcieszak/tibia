@@ -1,0 +1,73 @@
+// $clr-main: #887456;
+// $clr-main-lt: #a38b68;
+
+$clr-main: #a38b68;
+$clr-main-lt: #c2a57a;
+$clr-main-dk: #534735;
+$clr-bg: #323B4E;
+$clr-blue: #2954b3;
+
+.imbu-prices-box {
+    border-radius: 5px;
+    padding: 10px 10px 15px 10px !important;
+    width: calc(100% - 80px) !important;
+
+    .content {
+        width: 100%;
+        display: flex;
+    }
+
+    .side {
+        width: calc(50% - 10px);
+        padding: 5px;
+        margin: 5px;
+    }
+
+    span {
+        width: 230px;
+    }
+
+    input {
+        width: 80px;
+        text-align: center;
+        background: none;
+        &:hover { background: #ffffff15; }
+        &:focus { background: #ffffff30; font-weight: bold; }
+    }
+
+    .waste span {
+        text-decoration: line-through;
+    }
+
+    table {
+        width: 100%;
+        //border-top: 1px solid black;
+        //border-left: 1px solid black;
+        thead * { font-weight: bold; }
+
+
+        td {
+            padding: 2px;
+            text-align: center;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+
+            &:first-child {
+                text-align: left;
+            }
+
+            &.items { color: $clr-blue; }
+            &.tokens { color: gold; }
+        }
+
+        tbody td {
+            text-align: right;
+            
+            &:first-child {
+                text-align: left;
+            }
+        }
+
+    }
+
+}

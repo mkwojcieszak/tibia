@@ -1,0 +1,43 @@
+// $clr-main: #887456;
+// $clr-main-lt: #a38b68;
+
+$clr-main: #a38b68;
+$clr-main-lt: #c2a57a;
+$clr-main-dk: #534735;
+
+.character-selector {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border: 2px solid black;
+}
+
+.manager-window {
+
+    .wrap-list {
+
+        .character {
+            width: 250px;
+            box-shadow: 10px 10px 10px #00000040, 10px 10px 20px #00000040, 10px 10px 40px #00000040;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            background: $clr-main;
+
+            &:hover,
+            &:focus {
+                background: $clr-main-lt;
+            }
+
+            .info {
+                width: 100%;
+            }
+
+        }
+    }
+
+
+}

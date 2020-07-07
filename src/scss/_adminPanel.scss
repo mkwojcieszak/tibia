@@ -1,0 +1,47 @@
+.admin-panel-container {
+    position: fixed;
+    left: 10px;
+    top: 50px;
+    min-width: 300px;
+    min-height: 300px;
+    background: #303030;
+    display: flex;
+    flex-direction: column;
+    //&.hidden { display: none; }
+    * { color: white; }
+
+    .server-div, .activity-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .feedback-div {
+        border-bottom: 1px solid gray;
+    }
+
+    input {
+        background: #ffffff30;
+    }
+}
+
+.admin-panel {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+}
+
+
+.close-btn {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #262626;
+    color: yellow;
+}
